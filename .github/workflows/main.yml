@@ -10,13 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.09
+        uses: actions/checkout@v2
       - name: Checkmarx One CLI Action
         uses: checkmarx/ast-github-action@main #Github Action version
         with:
           #project_name: <Name of Checkmarx One Project>
           cx_tenant: apac-training
-          base_uri: https://anz.ast.checkmarx.net/ 
+          base_uri: https://anz.ast.checkmarx.net/
           cx_client_id: ${{ secrets.CLIENT_ID }}
           cx_client_secret: ${{ secrets.SECRET }}
-          additional_params: --threshold sast-high=20
