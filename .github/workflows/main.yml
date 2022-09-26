@@ -19,4 +19,4 @@ jobs:
           base_uri: https://anz.ast.checkmarx.net/ 
           cx_client_id: ${{ secrets.CLIENT_ID }}
           cx_client_secret: ${{ secrets.SECRET }}
-          additional_params: --threshold, sast-high=20
+          additional_params: -threshold sast-high=20
