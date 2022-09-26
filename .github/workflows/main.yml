@@ -12,8 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.09
       - name: Checkmarx One CLI Action
-        #uses: checkmarx/ast-github-action@main #Github Action version
-		uses: Checkmarx/ast-github-action@2.0.9
+        uses: checkmarx/ast-github-action@main #Github Action version
         with:
           #project_name: <Name of Checkmarx One Project>
           cx_tenant: apac-training
