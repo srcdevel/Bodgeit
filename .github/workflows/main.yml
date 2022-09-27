@@ -22,9 +22,9 @@ jobs:
           cx_client_secret: ${{ secrets.SECRET }}
           #additional_params: --sast-incremental
           #additional_params: --threshold sast-high=5
-          additional_params: --tags test1 test2 --report-format sarif --output-name result
+          additional_params: --tags test1 test2 --report-format sarif --output-name results
       - name: Upload SARIF file
-        uses: github/codeql-action/upload-sarif@v1
+        uses: github/codeql-action/upload-sarif@v2
         with:
           # Path to SARIF file relative to the root of the repository
           sarif_file: results.sarif
