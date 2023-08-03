@@ -21,7 +21,7 @@ jobs:
         #uses: checkmarx/ast-github-action@main #Github Action version
         uses: checkmarx/ast-github-action@2.0.20 #Github Action version
         with:
-          #project_name: <Name of Checkmarx One Project>
+          project_name: GithubActionDemo
           cx_tenant: cx_apac_ses_canary_richard_lee
           base_uri: https://deu.ast.checkmarx.net/
           cx_client_id: ${{ secrets.CLIENT_ID }}
